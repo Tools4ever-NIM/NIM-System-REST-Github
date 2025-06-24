@@ -1,0 +1,382 @@
+{
+    "schema": {
+      "crud_objects": {
+        "organization": {
+          "operations": {
+            "organizationList": {
+              "method": "get",
+              "call": {
+                "mode": "normal",
+                "path": "/orgs/{organization}"
+              },
+              "processing_options": {
+                "output_field": null
+              }
+            }
+          },
+          "key": "id",
+          "resources": {
+            "login": "string*",
+            "id": "string*",
+            "node_id": "string*",
+            "url": "string*",
+            "repos_url": "string*",
+            "events_url": "string*",
+            "hooks_url": "string*",
+            "issues_url": "string*",
+            "members_url": "string*",
+            "public_members_url": "string*",
+            "avatar_url": "string*",
+            "description": "string*",
+            "name": "string*",
+            "company": "string*",
+            "blog": "string*",
+            "location": "string*",
+            "email": "string*",
+            "twitter_username": "string*",
+            "is_verified": "boolean*",
+            "has_organization_projects": "boolean*",
+            "has_repository_projects": "boolean*",
+            "public_repos": "string*",
+            "public_gists": "string*",
+            "followers": "string*",
+            "following": "string*",
+            "html_url": "string*",
+            "created_at": "string*",
+            "type": "string*",
+            "total_private_repos": "string*",
+            "owned_private_repos": "string*",
+            "private_gists": "string*",
+            "disk_usage": "string*",
+            "collaborators": "string*",
+            "billing_email": "string*",
+            "plan": {
+              "name": "_:string*",
+              "space": "_:string*",
+              "private_repos": "_:string*",
+              "filled_seats": "_:string*",
+              "seats": "_:string*"
+            },
+            "default_repository_permission": "string*",
+            "default_repository_branch": "string*",
+            "members_can_create_repositories": "boolean*",
+            "two_factor_requirement_enabled": "boolean*",
+            "members_allowed_repository_creation_type": "string*",
+            "members_can_create_public_repositories": "boolean*",
+            "members_can_create_private_repositories": "boolean*",
+            "members_can_create_internal_repositories": "boolean*",
+            "members_can_create_pages": "boolean*",
+            "members_can_create_public_pages": "boolean*",
+            "members_can_create_private_pages": "boolean*",
+            "members_can_delete_repositories": "boolean*",
+            "members_can_change_repo_visibility": "boolean*",
+            "members_can_invite_outside_collaborators": "boolean*",
+            "members_can_delete_issues": "boolean*",
+            "display_commenter_full_name_setting_enabled": "boolean*",
+            "readers_can_create_discussions": "boolean*",
+            "members_can_create_teams": "boolean*",
+            "members_can_view_dependency_insights": "boolean*",
+            "members_can_fork_private_repositories": "boolean*",
+            "web_commit_signoff_required": "boolean*",
+            "updated_at": "string*",
+            "deploy_keys_enabled_for_repositories": "boolean*",
+            "dependency_graph_enabled_for_new_repositories": "boolean*",
+            "dependabot_alerts_enabled_for_new_repositories": "boolean*",
+            "dependabot_security_updates_enabled_for_new_repositories": "boolean*",
+            "advanced_security_enabled_for_new_repositories": "boolean*",
+            "secret_scanning_enabled_for_new_repositories": "boolean*",
+            "secret_scanning_push_protection_enabled_for_new_repositories": "boolean*",
+            "secret_scanning_push_protection_custom_link": "string*",
+            "secret_scanning_push_protection_custom_link_enabled": "boolean*"
+          }
+        },
+        "repositories": {
+          "operations": {
+            "repositoriesList": {
+              "method": "get",
+              "call": {
+                "mode": "normal",
+                "path": "/orgs/{organization}/repos"
+              },
+              "processing_options": {
+                "output_field": null
+              }
+            }
+          },
+          "key": "id",
+          "resources": {
+            "id": "string*",
+            "node_id": "string*",
+            "name": "string*",
+            "full_name": "string*",
+            "owner": {
+              "login": "_:string*",
+              "id": "_:string*",
+              "node_id": "_:string*",
+              "avatar_url": "_:string*",
+              "gravatar_id": "_:string*",
+              "url": "_:string*",
+              "html_url": "_:string",
+              "followers_url": "_:string",
+              "following_url": "_:string",
+              "gists_url": "_:string",
+              "starred_url": "_:string",
+              "subscriptions_url": "_:string",
+              "organizations_url": "_:string",
+              "repos_url": "_:string",
+              "events_url": "_:string",
+              "received_events_url": "_:string",
+              "type": "_:string*",
+              "site_admin": "_:boolean*"
+            },
+            "private": "boolean*",
+            "html_url": "string",
+            "description": "string*",
+            "fork": "boolean*",
+            "url": "string",
+            "archive_url": "string",
+            "assignees_url": "string",
+            "blobs_url": "string",
+            "branches_url": "string",
+            "collaborators_url": "string",
+            "comments_url": "string",
+            "commits_url": "string",
+            "compare_url": "string",
+            "contents_url": "string",
+            "contributors_url": "string",
+            "deployments_url": "string",
+            "downloads_url": "string",
+            "events_url": "string",
+            "forks_url": "string",
+            "git_commits_url": "string",
+            "git_refs_url": "string",
+            "git_tags_url": "string",
+            "git_url": "string*",
+            "issue_comment_url": "string",
+            "issue_events_url": "string",
+            "issues_url": "string",
+            "keys_url": "string",
+            "labels_url": "string",
+            "languages_url": "string",
+            "merges_url": "string",
+            "milestones_url": "string",
+            "notifications_url": "string",
+            "pulls_url": "string",
+            "releases_url": "string",
+            "ssh_url": "string*",
+            "stargazers_url": "string",
+            "statuses_url": "string",
+            "subscribers_url": "string",
+            "subscription_url": "string",
+            "tags_url": "string",
+            "teams_url": "string",
+            "trees_url": "string",
+            "clone_url": "string",
+            "mirror_url": "string",
+            "hooks_url": "string",
+            "svn_url": "string",
+            "homepage": "string",
+            "language": "string*",
+            "forks_count": "string*",
+            "stargazers_count": "string*",
+            "watchers_count": "string*",
+            "size": "string*",
+            "default_branch": "string*",
+            "open_issues_count": "string*",
+            "is_template": "boolean*",
+            "topics": "string*",
+            "has_issues": "boolean*",
+            "has_projects": "boolean*",
+            "has_wiki": "boolean*",
+            "has_pages": "boolean*",
+            "has_downloads": "boolean*",
+            "has_discussions": "boolean*",
+            "archived": "boolean*",
+            "disabled": "boolean*",
+            "visibility": "string*",
+            "pushed_at": "string*",
+            "created_at": "string*",
+            "updated_at": "string*",
+            "permissions": {
+              "admin": "_:boolean*",
+              "push": "_:boolean*",
+              "pull": "_:boolean*"
+            },
+            "security_and_analysis": {
+              "advanced_security": {
+                "status": "_:string*"
+              },
+              "secret_scanning": {
+                "status": "_;string*"
+              },
+              "secret_scanning_push_protection": {
+                "status": "_:string*"
+              },
+              "secret_scanning_non_provider_patterns": {
+                "status": "_:string*"
+              }
+            }
+          }
+        },
+        "releases": {
+          "operations": {
+            "repositoriesList": {
+              "method": "get",
+              "call": {
+                "mode": "iteration",
+                "table": "repositories",
+                "iterator": "name",              
+                "path": "/repos/{organization}/{iterator}/releases"
+              },
+              "processing_options": {
+                "output_field": null
+              }
+            }
+          },
+          "key": "id",
+          "resources": {
+            "url": "string*",
+            "html_url": "string",
+            "assets_url": "string",
+            "upload_url": "string",
+            "tarball_url": "string",
+            "zipball_url": "string",
+            "id": "string*",
+            "node_id": "string*",
+            "tag_name": "string*",
+            "target_commitish": "string*",
+            "name": "string*",
+            "body": "string*",
+            "draft": "boolean*",
+            "prerelease": "boolean*",
+            "created_at": "string*",
+            "published_at": "string*",
+            "author": {
+              "login": "_:string*",
+              "id": "_:string*",
+              "node_id": "_:string*",
+              "avatar_url": "_:string",
+              "gravatar_id": "_:string*",
+              "url": "_:string",
+              "html_url": "_:string",
+              "followers_url": "_:string",
+              "following_url": "_:string",
+              "gists_url": "_:string",
+              "starred_url": "_:string",
+              "subscriptions_url": "_:string",
+              "organizations_url": "_:string",
+              "repos_url": "_:string",
+              "events_url": "_:string",
+              "received_events_url": "_:string",
+              "type": "_:string*",
+              "site_admin": "_:boolean*"
+            },
+            "assets": [
+              {
+                "url": "string*",
+                "browser_download_url": "string*",
+                "id": "string*",
+                "node_id": "string*",
+                "name": "string*",
+                "label": "string*",
+                "state": "string*",
+                "content_type": "string*",
+                "size": "string*",
+                "digest": "string*",
+                "download_count": "string*",
+                "created_at": "string*",
+                "updated_at": "string*",
+                "uploader": {
+                  "login": "_:string*",
+                  "id": "_:string*",
+                  "node_id": "_:string*",
+                  "avatar_url": "_:string",
+                  "gravatar_id": "_:string*",
+                  "url": "_:string",
+                  "html_url": "_:string",
+                  "followers_url": "_:string",
+                  "following_url": "_:string",
+                  "gists_url": "_:string",
+                  "starred_url": "_:string",
+                  "subscriptions_url": "_:string",
+                  "organizations_url": "_:string",
+                  "repos_url": "_:string",
+                  "events_url": "_:string",
+                  "received_events_url": "_:string*",
+                  "type": "_:string*",
+                  "site_admin": "_:boolean*"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "rest": {
+      "config": {
+        "baseUrl": "https://api.github.com",
+        "get": {
+          "pagination": {
+                "mode": "link",
+                "page_size":"{page_size}"
+          },
+          "queryParameters": {
+            "per_page": "{page_size}"
+          }
+        },
+        "authentication": "authorization_code_grant",
+        "call_handling": "generic",
+        "test_connection": {
+          "url": "/organizations"
+        },
+        "socket_timeout": 3600000,
+        "retry": [
+            {
+                "type": "statusCode",
+                "statusCode": 429,
+                "retry": {
+                    "type": "simple",
+                    "maxCount": 12,
+                    "waitTime": 5
+                }
+            },
+            {
+                "type": "statusCode",
+                "statusCode": 500,
+                "retry": {
+                    "type": "simple",
+                    "maxCount": 12,
+                    "waitTime": 5
+                }
+            },
+            {
+                "type": "connectionError"
+            }
+        ]
+      },
+      "authOptions": {
+            "type": "authorization_code_grant",
+            "authUrl": "https://github.com/login/oauth/access_token",
+            "loginUrl": "https://github.com/login/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&scope={scopes}",
+            "scopes": [
+                "repo"
+            ]
+      }
+    },
+    "connection": {
+      "items": [
+        {
+          "name": "page_size",
+          "type": "textbox",
+          "label": "Page Size",
+          "value": "100"
+        },
+        {
+          "name": "organization",
+          "type": "textbox",
+          "label": "Organization",
+          "value": ""
+        }
+      ]
+    }
+  }
